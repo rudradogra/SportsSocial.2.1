@@ -4,7 +4,7 @@
   --secondary-color: #ffffff;
   --text-color: #333;
   --glass-bg: rgba(255, 255, 255, 0.1);
-  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-border: rgba(0, 0, 0, 0.3); /* Darker border */
   --vote-color: #ff4500;
   --comment-bg: #f8f9fa;
   --sidebar-width: 240px;
@@ -31,6 +31,7 @@ body {
 .app {
   display: flex;
   min-height: 100vh;
+  gap: 2rem;
 }
 
 .main-content {
@@ -139,6 +140,7 @@ body {
   left: 0;
   top: 60px;
   bottom: 0;
+  right: 60px;
   width: var(--sidebar-width);
   background: var(--secondary-color);
   border-right: 1px solid var(--glass-border);
@@ -190,17 +192,24 @@ body {
 
 /* Post styles */
 .posts-container {
-  max-width: 600px;
-  width: 100%;
+  max-width: 1000px;
+  width: 800px;
   padding: 2rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 150px;
 }
 
+/* Post styles */
 .post {
   background: var(--secondary-color);
   border: 1px solid var(--glass-border);
   border-radius: 8px;
   margin-bottom: 2rem;
   overflow: hidden;
+  width: 100%;
 }
 
 .post-content-section {

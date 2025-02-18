@@ -14,7 +14,7 @@ function App() {
     {
       id: 1,
       author: 'BasketballFan23',
-      avatar: 'https://i.pravatar.cc/150?img=1',
+      avatar: 'https://i.pravatar.cc/150?img=23',
       title: 'Pick-up game at Central Park!',
       location: '📍 Central Park Basketball Courts',
       content: 'Looking for more players for a 3v3 game. We\'re here until 6pm. All skill levels welcome!',
