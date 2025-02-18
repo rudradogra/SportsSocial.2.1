@@ -250,6 +250,14 @@ body {
 .post-text {
   margin-bottom: 1rem;
 }
+.post-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
 
 .post-footer {
   display: flex;

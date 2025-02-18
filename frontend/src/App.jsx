@@ -14,10 +14,11 @@ function App() {
     {
       id: 1,
       author: 'BasketballFan23',
-      avatar: 'https://i.pravatar.cc/150?img=23',
+      avatar: 'https://i.pravatar.cc/150?img=1',
       title: 'Pick-up game at Central Park!',
       location: '📍 Central Park Basketball Courts',
       content: 'Looking for more players for a 3v3 game. We\'re here until 6pm. All skill levels welcome!',
+      image: 'https://images.unsplash.com/photo-1544919982-b61976f0ba43?w=800&q=80',
       likes: 45,
       liked: false,
       comments: [
@@ -32,6 +33,7 @@ function App() {
       title: 'Soccer practice session',
       location: '📍 Riverside Fields',
       content: 'Organizing a practice session this evening. Focus on passing drills and small-sided games.',
+      image: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&q=80',
       likes: 32,
       liked: false,
       comments: [
@@ -158,6 +160,9 @@ function App() {
                 <h2 className="post-title">{post.title}</h2>
                 <div className="post-location">{post.location}</div>
                 <p className="post-text">{post.content}</p>
+                {post.image && (
+                  <img src={post.image} alt={post.title} className="post-image" />
+                )}
               </div>
               
               <div className="post-footer">
